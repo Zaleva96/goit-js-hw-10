@@ -16,3 +16,137 @@
 @import url('./badges.css');
 @import url('./back-link.css');
 @import url('./footer.css');
+
+#datetime-picker {
+  padding: 8px 12px;
+  font-size: 16px;
+  width: 260px;
+}
+
+button[data-start] {
+  padding: 8px 16px;
+  margin-left: 10px;
+  font-size: 16px;
+  background: #e5e5e5;
+  border: 1px solid #ccc;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+button[data-start]:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.timer {
+  display: flex;
+  gap: 30px;
+  margin-top: 40px;
+  justify-content: center;
+}
+
+.field {
+  text-align: center;
+}
+
+.value {
+  font-size: 48px;
+  font-weight: 500;
+  display: block;
+}
+
+.label {
+  font-size: 14px;
+  text-transform: uppercase;
+  color: #555;
+  margin-top: 5px;
+}
+
+/* Snackbar */
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  margin: 0;
+  padding: 10px;
+}
+
+.form {
+  max-width: 250px;
+
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  background-color: #fff;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+
+  margin: 20px auto;
+
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.form label {
+  display: flex;
+  flex-direction: column;
+  font-weight: 500;
+  font-size: 0.8em;
+}
+
+.form input[type='number'] {
+  padding: 5px;
+  margin-top: 3px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  font-size: 0.9em;
+}
+
+fieldset {
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  padding: 5px;
+
+  width: fit-content;
+
+  margin: 0 auto;
+
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+legend {
+  font-size: 0.8em;
+  font-weight: 600;
+  padding: 0 5px;
+  color: #555;
+}
+
+fieldset label {
+  display: inline-flex;
+  align-items: center;
+  font-weight: 400;
+  font-size: 0.8em;
+}
+
+fieldset input[type='radio'] {
+  margin-right: 3px;
+  width: 12px;
+  height: 12px;
+}
+
+.form button[type='submit'] {
+  padding: 8px 10px;
+  background-color: #f0f0f0;
+  color: #333;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  cursor: pointer;
+  font-size: 0.9em;
+  transition: background-color 0.2s;
+}
+
+.form button[type='submit']:hover {
+  background-color: #e0e0e0;
+}
